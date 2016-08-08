@@ -24,13 +24,26 @@
                                     <constraint firstAttribute="height" constant="294" id="8Lr-lD-rPM"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6C-3j-QNZ">
+                                <rect key="frame" x="693" y="20" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="j0Q-GD-qSl"/>
+                                    <constraint firstAttribute="height" constant="30" id="zp2-q7-KuQ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="vUJ-3W-7gB" kind="show" id="k1f-C3-AgK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="faP-qd-PCr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3mW-3C-npZ"/>
                             <constraint firstItem="faP-qd-PCr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="D4H-q1-pF8"/>
+                            <constraint firstAttribute="trailing" secondItem="f6C-3j-QNZ" secondAttribute="trailing" constant="29" id="QW8-c9-3HU"/>
                             <constraint firstItem="faP-qd-PCr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="29" id="lH1-Pd-8ix"/>
                             <constraint firstAttribute="trailing" secondItem="faP-qd-PCr" secondAttribute="trailing" constant="29" id="ta5-uR-JIb"/>
+                            <constraint firstItem="f6C-3j-QNZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="wYW-MT-MEK"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
@@ -42,6 +55,71 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="470" y="429"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="dgt-sr-oFe">
+            <objects>
+                <viewController id="vUJ-3W-7gB" customClass="SecondViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gIL-sQ-Jrg"/>
+                        <viewControllerLayoutGuide type="bottom" id="TGf-J6-TmS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kq6-Z1-Apb">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z6k-fs-4xo">
+                                <rect key="frame" x="33" y="67" width="702" height="547"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lc3-0O-Y7l" customClass="TBDisplayView">
+                                        <rect key="frame" x="0.0" y="0.0" width="702" height="547"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="547" id="gsU-xL-WJg"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Lc3-0O-Y7l" secondAttribute="bottom" id="Fxz-43-1wz"/>
+                                    <constraint firstAttribute="trailing" secondItem="Lc3-0O-Y7l" secondAttribute="trailing" id="MuT-m7-MnS"/>
+                                    <constraint firstItem="Lc3-0O-Y7l" firstAttribute="width" secondItem="z6k-fs-4xo" secondAttribute="width" id="Nk2-Uf-l9c"/>
+                                    <constraint firstAttribute="height" constant="547" id="RlD-MH-y0J"/>
+                                    <constraint firstItem="Lc3-0O-Y7l" firstAttribute="leading" secondItem="z6k-fs-4xo" secondAttribute="leading" id="YX8-fz-bK1"/>
+                                    <constraint firstItem="Lc3-0O-Y7l" firstAttribute="top" secondItem="z6k-fs-4xo" secondAttribute="top" id="e7N-tI-Tiu"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jxh-ba-Jci">
+                                <rect key="frame" x="10" y="10" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bIQ-8E-tSY"/>
+                                    <constraint firstAttribute="width" constant="46" id="w5Q-hM-Cb1"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="dismissAction:" destination="vUJ-3W-7gB" eventType="touchUpInside" id="woL-4G-W8D"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="z6k-fs-4xo" firstAttribute="centerX" secondItem="kq6-Z1-Apb" secondAttribute="centerX" id="0uP-aV-Pwl"/>
+                            <constraint firstItem="Jxh-ba-Jci" firstAttribute="leading" secondItem="kq6-Z1-Apb" secondAttribute="leading" constant="10" id="2E1-7t-Fgi"/>
+                            <constraint firstItem="Jxh-ba-Jci" firstAttribute="top" secondItem="kq6-Z1-Apb" secondAttribute="top" constant="10" id="Et4-RY-iLn"/>
+                            <constraint firstItem="z6k-fs-4xo" firstAttribute="leading" secondItem="kq6-Z1-Apb" secondAttribute="leading" constant="33" id="ah4-s6-aWI"/>
+                            <constraint firstAttribute="trailing" secondItem="z6k-fs-4xo" secondAttribute="trailing" constant="33" id="l08-iQ-PpU"/>
+                            <constraint firstItem="z6k-fs-4xo" firstAttribute="top" secondItem="gIL-sQ-Jrg" secondAttribute="bottom" constant="47" id="owC-mM-HIh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="sDisplayView" destination="Lc3-0O-Y7l" id="CnB-7P-a5m"/>
+                        <outlet property="sDisplayViewConstrainHeight" destination="gsU-xL-WJg" id="RX7-hm-HS3"/>
+                        <outlet property="sScrollView" destination="z6k-fs-4xo" id="Ggu-SL-lZq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Myd-YO-9PY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1471" y="429"/>
         </scene>
     </scenes>
 </document>

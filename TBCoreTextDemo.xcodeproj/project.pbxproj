@@ -23,6 +23,7 @@
 		307905111D50A22D0082C40F /* TBDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 307905101D50A22D0082C40F /* TBDisplayView.m */; };
 		307905141D50A4C80082C40F /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 307905131D50A4C80082C40F /* UIView+Frame.m */; };
 		307905181D50ADEF0082C40F /* TBFrameParserConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 307905171D50ADEF0082C40F /* TBFrameParserConfig.m */; };
+		810FA8271D55AF220095641F /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 810FA8261D55AF220095641F /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,8 @@
 		307905151D50ACE60082C40F /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		307905161D50ADEF0082C40F /* TBFrameParserConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBFrameParserConfig.h; sourceTree = "<group>"; };
 		307905171D50ADEF0082C40F /* TBFrameParserConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBFrameParserConfig.m; sourceTree = "<group>"; };
+		810FA8251D55AF220095641F /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		810FA8261D55AF220095641F /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,8 @@
 				307904EE1D50A1FC0082C40F /* AppDelegate.m */,
 				307904F01D50A1FC0082C40F /* ViewController.h */,
 				307904F11D50A1FC0082C40F /* ViewController.m */,
+				810FA8251D55AF220095641F /* SecondViewController.h */,
+				810FA8261D55AF220095641F /* SecondViewController.m */,
 				307905121D50A4C80082C40F /* UIView+Frame.h */,
 				307905131D50A4C80082C40F /* UIView+Frame.m */,
 				3079050F1D50A22D0082C40F /* TBDisplayView.h */,
@@ -255,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				810FA8271D55AF220095641F /* SecondViewController.m in Sources */,
 				307904F21D50A1FC0082C40F /* ViewController.m in Sources */,
 				3059F4C81D50B11A006C298D /* TBCoreTextData.m in Sources */,
 				307905111D50A22D0082C40F /* TBDisplayView.m in Sources */,
