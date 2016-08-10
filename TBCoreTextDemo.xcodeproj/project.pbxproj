@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		304B45501D519FD1000A0F03 /* ContentConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 304B454F1D519FD1000A0F03 /* ContentConfig.json */; };
-		304B45521D51DB00000A0F03 /* meihua.png in Resources */ = {isa = PBXBuildFile; fileRef = 304B45511D51DB00000A0F03 /* meihua.png */; };
 		304B45551D51E125000A0F03 /* TBCoreTextImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = 304B45541D51E125000A0F03 /* TBCoreTextImageData.m */; };
 		30588F2F1D52E63C0027687F /* 多选框_选中.png in Resources */ = {isa = PBXBuildFile; fileRef = 30588F2E1D52E63C0027687F /* 多选框_选中.png */; };
 		3059F4C51D50B0C3006C298D /* TBFrameParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3059F4C41D50B0C3006C298D /* TBFrameParser.m */; };
 		3059F4C81D50B11A006C298D /* TBCoreTextData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3059F4C71D50B11A006C298D /* TBCoreTextData.m */; };
+		307187801D584F6C00E33740 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3071877F1D584F6C00E33740 /* ThirdViewController.m */; };
 		307904EC1D50A1FC0082C40F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 307904EB1D50A1FC0082C40F /* main.m */; };
 		307904EF1D50A1FC0082C40F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 307904EE1D50A1FC0082C40F /* AppDelegate.m */; };
 		307904F21D50A1FC0082C40F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 307904F11D50A1FC0082C40F /* ViewController.m */; };
@@ -38,7 +38,6 @@
 
 /* Begin PBXFileReference section */
 		304B454F1D519FD1000A0F03 /* ContentConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ContentConfig.json; sourceTree = "<group>"; };
-		304B45511D51DB00000A0F03 /* meihua.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meihua.png; sourceTree = "<group>"; };
 		304B45531D51E125000A0F03 /* TBCoreTextImageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBCoreTextImageData.h; sourceTree = "<group>"; };
 		304B45541D51E125000A0F03 /* TBCoreTextImageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBCoreTextImageData.m; sourceTree = "<group>"; };
 		30588F2E1D52E63C0027687F /* 多选框_选中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "多选框_选中.png"; sourceTree = "<group>"; };
@@ -46,6 +45,8 @@
 		3059F4C41D50B0C3006C298D /* TBFrameParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBFrameParser.m; sourceTree = "<group>"; };
 		3059F4C61D50B11A006C298D /* TBCoreTextData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBCoreTextData.h; sourceTree = "<group>"; };
 		3059F4C71D50B11A006C298D /* TBCoreTextData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBCoreTextData.m; sourceTree = "<group>"; };
+		3071877E1D584F6C00E33740 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		3071877F1D584F6C00E33740 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		307904E71D50A1FC0082C40F /* TBCoreTextDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TBCoreTextDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		307904EB1D50A1FC0082C40F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		307904ED1D50A1FC0082C40F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -116,6 +117,8 @@
 				307904F11D50A1FC0082C40F /* ViewController.m */,
 				810FA8251D55AF220095641F /* SecondViewController.h */,
 				810FA8261D55AF220095641F /* SecondViewController.m */,
+				3071877E1D584F6C00E33740 /* ThirdViewController.h */,
+				3071877F1D584F6C00E33740 /* ThirdViewController.m */,
 				307905121D50A4C80082C40F /* UIView+Frame.h */,
 				307905131D50A4C80082C40F /* UIView+Frame.m */,
 				3079050F1D50A22D0082C40F /* TBDisplayView.h */,
@@ -142,7 +145,6 @@
 			isa = PBXGroup;
 			children = (
 				30588F2E1D52E63C0027687F /* 多选框_选中.png */,
-				304B45511D51DB00000A0F03 /* meihua.png */,
 				307904EB1D50A1FC0082C40F /* main.m */,
 			);
 			name = "Supporting Files";
@@ -238,7 +240,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				307904FA1D50A1FC0082C40F /* LaunchScreen.storyboard in Resources */,
-				304B45521D51DB00000A0F03 /* meihua.png in Resources */,
 				307904F71D50A1FC0082C40F /* Assets.xcassets in Resources */,
 				307904F51D50A1FC0082C40F /* Main.storyboard in Resources */,
 				304B45501D519FD1000A0F03 /* ContentConfig.json in Resources */,
@@ -265,6 +266,7 @@
 				3059F4C81D50B11A006C298D /* TBCoreTextData.m in Sources */,
 				307905111D50A22D0082C40F /* TBDisplayView.m in Sources */,
 				304B45551D51E125000A0F03 /* TBCoreTextImageData.m in Sources */,
+				307187801D584F6C00E33740 /* ThirdViewController.m in Sources */,
 				307905181D50ADEF0082C40F /* TBFrameParserConfig.m in Sources */,
 				307904EF1D50A1FC0082C40F /* AppDelegate.m in Sources */,
 				307905141D50A4C80082C40F /* UIView+Frame.m in Sources */,

@@ -35,12 +35,25 @@
                                     <segue destination="vUJ-3W-7gB" kind="show" id="k1f-C3-AgK"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yL5-jH-fpf">
+                                <rect key="frame" x="20" y="17" width="49" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="H2W-TI-xNX"/>
+                                    <constraint firstAttribute="width" constant="49" id="MKQ-nI-Wah"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="J6W-TC-hDf" kind="show" id="8Dr-61-lLZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="faP-qd-PCr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3mW-3C-npZ"/>
+                            <constraint firstItem="yL5-jH-fpf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="17" id="4JW-pP-ehs"/>
                             <constraint firstItem="faP-qd-PCr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="D4H-q1-pF8"/>
                             <constraint firstAttribute="trailing" secondItem="f6C-3j-QNZ" secondAttribute="trailing" constant="29" id="QW8-c9-3HU"/>
+                            <constraint firstItem="yL5-jH-fpf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="b1F-Qs-wqi"/>
                             <constraint firstItem="faP-qd-PCr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="29" id="lH1-Pd-8ix"/>
                             <constraint firstAttribute="trailing" secondItem="faP-qd-PCr" secondAttribute="trailing" constant="29" id="ta5-uR-JIb"/>
                             <constraint firstItem="f6C-3j-QNZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="wYW-MT-MEK"/>
@@ -55,6 +68,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="470" y="429"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="9ag-VY-dFh">
+            <objects>
+                <viewController id="J6W-TC-hDf" customClass="ThirdViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="M8J-xn-C8y"/>
+                        <viewControllerLayoutGuide type="bottom" id="9FN-lm-pKg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3dg-sv-7yJ">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5x9-Sy-1Tn">
+                                <rect key="frame" x="20" y="20" width="737" height="984"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9FN-lm-pKg" firstAttribute="top" secondItem="5x9-Sy-1Tn" secondAttribute="bottom" constant="20" id="2Oa-jQ-C2v"/>
+                            <constraint firstItem="5x9-Sy-1Tn" firstAttribute="top" secondItem="M8J-xn-C8y" secondAttribute="bottom" id="rrb-1E-OmN"/>
+                            <constraint firstAttribute="trailing" secondItem="5x9-Sy-1Tn" secondAttribute="trailing" constant="11" id="wxa-It-Ax5"/>
+                            <constraint firstItem="5x9-Sy-1Tn" firstAttribute="leading" secondItem="3dg-sv-7yJ" secondAttribute="leading" constant="20" id="yXN-7B-RAO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tWebView" destination="5x9-Sy-1Tn" id="hZa-fi-Btn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ToI-qw-fOs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1376" y="-525"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="dgt-sr-oFe">
